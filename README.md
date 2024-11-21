@@ -76,6 +76,18 @@ A full-stack web application for book reviews, allowing users to sign in, sign u
    VALUES
    ('The Great Gatsby', 'F. Scott Fitzgerald', 5, 'A masterpiece of 20th-century literature.', 1),
    ('To Kill a Mockingbird', 'Harper Lee', 4, 'A powerful story about justice and morality.', 2);
+
+   CREATE TABLE books (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    UNIQUE KEY title_author_unique (title, author)
+   );
+
+   ALTER TABLE book_reviews
+   ADD COLUMN book_id BIGINT NOT NULL,
+   ADD CONSTRAINT fk_book FOREIGN KEY (book_id) REFERENCES books (id) ON DELETE CASCADE;
+
 ---
 
 ## 3.Frontend Setup
