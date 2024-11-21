@@ -1,0 +1,100 @@
+# General
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Java (Spring Boot)
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.project
+*.classpath
+*.settings/
+*.factorypath
+
+# Maven
+.mvn/
+target/
+dependency-reduced-pom.xml
+release.properties
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+mvn-eclipse.xml
+.mvn/timing.properties
+!**/src/main/**/META-INF/maven/**
+
+# IntelliJ IDEA
+.idea/
+*.ipr
+*.iws
+*.iml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/libraries/
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/artifacts/
+.idea/shelf/
+.idea/runConfigurations/
+.idea/dataSources/
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/sqlDataSources.local.xml
+.idea/dynamic.xml
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/caches/
+.idea/vcs.xml
+out/
+*.env
+
+# Eclipse
+.metadata/
+bin/
+*.swp
+*~
+.metadata/.plugins/org.eclipse.wst.server.core/tmp*
+.metadata/.plugins/org.eclipse.jdt.core/*.indexes
+.metadata/.plugins/org.eclipse.jdt.core/scope.xml
+.metadata/.plugins/org.eclipse.jdt.core/*.snap
+.metadata/.plugins/org.eclipse.pde.core/*.log
+*.bak
+
+# React (Vite)
+node_modules/
+dist/
+*.local
+.vite/
+.vscode/
+yarn-error.log
+npm-debug.log
+yarn-debug.log*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing
+/coverage/
+/test-output/
+/target/test-output/
+
+# Operating System
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+.Trash-*
+*.swp
+*.swo
